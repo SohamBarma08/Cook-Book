@@ -229,3 +229,21 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
 }
+
+// --------------Google Form Script--------------
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyE8tzgFS-KDsu4d8-Vf1wG1rCb2MfLsUGTz4gzYHkYLtNa6suWxafPry-jsaGiIanK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent succssfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })

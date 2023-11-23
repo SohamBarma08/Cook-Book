@@ -22,6 +22,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    
 }
 .container{
     padding: 10px 10%;
@@ -32,9 +33,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 140px;
-}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -43,7 +41,8 @@ nav ul li{
 nav ul li a{
     color: var(--secondary-clr);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight:600;
     position: relative;
 }
 nav ul li a::after{
@@ -95,7 +94,7 @@ nav .fa-solid{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
 }
 .light-dark-mode {
     width: 40px;
@@ -379,9 +378,23 @@ nav .fa-solid{
 .sub-title{
     color: var(--secondary-clr);
 }
-.btn.btn2{
-    display: inline-block;
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #ff004f;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 20px;
+    font-weight:600;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.btn:hover{
     background: #ff004f;
+    color: #fff;
 }
 form input, form textarea{
     width: 100%;
@@ -397,12 +410,12 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form btn2{
+/* form btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-}
+} */
 #msg{
     color: #61b752;
     margin-top: -30px;

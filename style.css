@@ -469,6 +469,9 @@ form input, form textarea{
         left: 25px;
         cursor: pointer;
     }
+    .card {
+        width: clamp(200px, 92vw, 300px);
+    }
     .pop-up {
         overflow-y: scroll;
         padding: 0;

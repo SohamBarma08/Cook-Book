@@ -25,7 +25,7 @@ body {
     
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px;
 }
 nav{
     display: flex;
@@ -95,7 +95,7 @@ nav .fa-solid{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 5px;
 }
 .light-dark-mode {
     width: 40px;
@@ -436,7 +436,7 @@ form input, form textarea{
     color: #ff004f;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 885px) {
     .hader-text{
         margin-top: 100%;
         font-size: 16px;
@@ -469,6 +469,7 @@ form input, form textarea{
         left: 25px;
         cursor: pointer;
     }
+
     .card {
         width: clamp(200px, 92vw, 300px);
     }

@@ -59,6 +59,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 nav .fa-solid{
+    color: var(--secondary-clr);
     display: none;
 }
 .hader-text{
@@ -171,6 +172,7 @@ nav .fa-solid{
 }
 
 .fav-meals-container {
+    width: 100%;
     text-align: center;
     color: var(--secondary-clr);
     box-shadow: 0 0 .3rem var(--secondary-rgba-3);
@@ -450,12 +452,12 @@ form input, form textarea{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
+        left: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: left 0.5s;
     }
     nav ul li{
         display: block;
